@@ -22,12 +22,18 @@ stands still when both photo-resistors are receiving the same light level.
 RV2 is used to setup hysteresis level, so that motor is not moving when the
 light difference on photo-resistors is small.
 
-H-bridge formed by Q1, Q2, Q3, Q4 transistors is powering the motor, according
-to control signals from comparators. Transistors are working in switch mode, as
-comparators yield only 0 or VCC:
+H-bridge formed by Q1-Q4 transistors is powering the motor, according to control
+signals from comparators. Transistors are working in switch mode, as comparators
+yield only 0 or VCC:
 
-    V_out = 0, if V+ < V-
+    V_out = 0,   if V+ < V-
     V_out = Vcc, if V+ > V-
+
+D1-D4 are just flyback diodes, providing the path for back EMF discharge from
+motor's coil, preventing it to burn transistors.
+
+C1 provides some of the energy required by the motor during the initial spike of
+each turn-on.
 
 Notice that DC motor arcing leads to EMI, which may affect your external
 circuits (especially digital ones, like MCUs). In that case you should install
