@@ -30,14 +30,15 @@ yield only 0 or VCC:
     V_out = Vcc, if V+ > V-
 
 D1-D4 are just flyback diodes, providing the path for back EMF discharge from
-motor's coil, preventing it to burn transistors.
+motor's coil, preventing other elements from it (transistors can be burnt, or
+limit switches can be carbonized due to arcing).
 
 C1 provides some of the energy required by the motor during the initial spike of
 each turn-on.
 
-Notice that DC motor arcing leads to EMI, which may affect your external
-circuits (especially digital ones, like MCUs). In that case you should install
-EMI suppressor on your motor leads.
+Notice that switching of DC motor's brushes leads to EMI, which may affect your
+external circuits (especially digital ones, like MCUs). In that case you should
+install EMI suppressor on your motor leads.
 
 ## PCB notes
 
