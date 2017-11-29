@@ -1,5 +1,4 @@
 - provide limit switches in schematics and PCB
-- add two limit switches schemes to doc/ and add descriptions (pros and cons)
 - mark all screw terminals with labels ("Motor", etc)
 - check all REF labels (ant others) positions; use 3D viewer
 - remove 0.3 width track and make min clearance 0.5 in DRC

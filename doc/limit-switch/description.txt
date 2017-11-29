@@ -1,0 +1,29 @@
+limit-switch-1.png
+------------------
+
+Pros:
+ 1. Easier to implement
+ 2. Limit switches can be low power rated
+
+Cons:
+ 1. Transistor bases are floating in the air, when limit switch is activated;
+    at least bases need to be pulled down
+ 2. Not robust scheme: if transistor is broken, limit switch won't work
+
+
+limit-switch-2.png
+------------------
+
+Pros:
+ 1. Robust scheme; limit switches are in motor circuit, so they will always
+    work (even if transistors are broken)
+ 2. No need to pull-down transistors' bases
+
+Cons:
+ 1. Limit switches must be high-power rated (big current); also possible
+    arcing/sparking on switching should be taken into the account
+ 2. May be harder to implement, but may be not:
+    a) in case when diodes are soldered in the board, it's getting bigger
+    b) but in case when diodes are external (can be soldered on limit switches
+       for example), the schematic doesn't change at all: we are just connecting
+       the motor to the board not directly, but via limit switches.
