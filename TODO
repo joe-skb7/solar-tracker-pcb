@@ -1,5 +1,5 @@
 - provide limit switches in schematics and PCB
-- mark all screw terminals with labels ("Motor", etc)
+- mark all screw terminals with labels ("Motor", "Motor +/-", etc.)
 - check all REF labels (ant others) positions; use 3D viewer
 - remove 0.3 width track and make min clearance 0.5 in DRC
 - diodes: make them vertical in PCB?
