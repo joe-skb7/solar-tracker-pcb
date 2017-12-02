@@ -46,7 +46,7 @@ R3, R4 and C2 are used to properly terminate unused OPAMPs (U1C, U1D).
 J5 and J6 terminal blocks (along with D5, D6 diodes) are used for connecting the
 limit switches.
 
-## Power consideration
+### Power consideration
 
 Power voltage: 9V must be used. It's because the motor will receive only
 `Vcc - 2.6` Volts, due to voltage drop across transistors and also on OPAMP,
@@ -61,7 +61,13 @@ I suggest one to use external 12V-to-9V buck converter (2A rated, or more). It's
 efficient (95%), small enough, and usually costs only $2-$3. No need to
 over-complicate tracker schematic by adding voltage regulator scheme to it.
 
-## EMI note
+### Limit switches
+
+`doc/limit-switch/` directory contains two possible schemes to implement limit
+switches in H-bridge, with pros/cons overview. I personally like the second
+scheme the best, so I implemented it in this project.
+
+### EMI note
 
 Notice that switching of DC motor's brushes leads to EMI, which may affect your
 external circuits (especially digital ones, like MCUs). In that case you should
