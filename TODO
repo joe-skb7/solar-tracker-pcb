@@ -1,12 +1,6 @@
-- provide limit switches in schematics and PCB
-- mark all screw terminals with labels ("Motor", "Motor +/-", etc.)
-- check all REF labels (ant others) positions; use 3D viewer
-- remove 0.3 width track and make min clearance 0.5 in DRC
-- diodes: make them vertical in PCB?
-- use "white plastic" connectors instead of / along with screw terminals?
 - add all my calculations and explanations to doc/; see mail threads
 - add instructions on how to build the whole thing to README.md file
-- mention 9V power on PCB and in instructions
+- mention 9V power on in instructions
 - github: add tags
 - github: add screenshots
 - add youtube video to links

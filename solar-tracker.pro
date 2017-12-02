@@ -1,4 +1,4 @@
-update=Sat 25 Nov 2017 02:05:16 PM EET
+update=Sat 02 Dec 2017 03:56:47 AM EET
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,10 +62,11 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=diode
+LibName34=mechanical
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
