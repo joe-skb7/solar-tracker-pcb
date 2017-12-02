@@ -91,6 +91,26 @@ Notes:
 You can order the PCB to be manufactured on plant, e.g. at Seeed Studio (Fusion
 PCB) or JLCPCB. Gerber files and drill file are prepared at `out/gerber/`.
 
+## References
+
+### Original scheme description and discussion
+
+[1] http://www.electroschematics.com/8019/diy-solar-tracker-system/
+
+[2] http://izobreteniya.net/solnechnyiy-treker-svoimi-rukami/
+
+[3] http://radiokot.ru/forum/viewtopic.php?f=3&t=144321
+
+[4] https://www.youtube.com/watch?v=UQyiuxo1Wvo
+
+### Unused OPAMPs: proper termination
+
+[5] https://www.electronicproducts.com/Analog_Mixed_Signal_ICs/Amplifiers/Properly_terminating_an_unused_op_amp.aspx
+
+### EMI suppressor
+
+[6] http://reprap.org/wiki/GM3_Noise_Suppressor_v1.0
+
 ## Authors
 
 **Sam Protsenko**
