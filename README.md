@@ -8,8 +8,9 @@ This project contains solar tracker PCB I made for my dad's project.
 I used KiCAD 4.0.7 for this PCB, but it should open fine in different versions,
 as I keep `-cache.lib` file in this repo.
 
-Original schematic can be found in `doc/scheme.jpg`. The only thing I changed
-is properly connected unused OPAMP parts.
+Original schematic can be found in `doc/scheme.jpg`. Things that I changed:
+* properly terminated unused OPAMP parts
+* added limit switches connection
 
 ## Schematic explanation
 
@@ -40,17 +41,32 @@ limit switches can be carbonized due to arcing).
 C1 provides some of the energy required by the motor during the initial spike of
 each turn-on.
 
+R3, R4 and C2 are used to properly terminate unused OPAMPs (U1C, U1D).
+
+J5 and J6 terminal blocks (along with D5, D6 diodes) are used for connecting the
+limit switches.
+
 Notice that switching of DC motor's brushes leads to EMI, which may affect your
 external circuits (especially digital ones, like MCUs). In that case you should
 install EMI suppressor on your motor leads.
 
-## PCB notes
+## Prepared files
 
-1. You may want to add copper pour to the PCB if manufacturing your PCB at
-   the plant (like Seeed Studio or JLCPCB, etc.)
-2. Notice the Vias and front layer tracks. It serves as jumper wires, as
-   I'm using single-layer boards for home-made PCBs. So you need to solder it
-   in case you are doing it on single-layer board too.
+`out/` directory contains ready to use files for manufacturing the PCB.
+
+### Toner Transfer Method
+
+See `out/toner-transfer-method/` for ready to use files.
+
+Notes:
+1. Remove the copper pour from both sides of PCB
+2. Notice the Vias and front layer tracks. You need to solder jumper wires
+   instead of them, in case if you are using single sided copper clad board.
+
+### Manufacturing at plant
+
+You can order the PCB to be manufactured on plant, e.g. at Seeed Studio (Fusion
+PCB) or JLCPCB. Gerber files and drill file are prepared at `out/gerber/`.
 
 ## Authors
 
