@@ -2,8 +2,17 @@
 
 This project contains solar tracker PCB I made for my dad's project.
 
+3D Model, Front View:
+
 ![Image](doc/screenshots/3d-model-front.png?raw=true "3D Model, Front View")
+
+3D Model, Bottom View:
+
 ![Image](doc/screenshots/3d-model-bottom.png?raw=true "3D Mode, Bottom View")
+
+Schematic:
+
+![Image](doc/screenshots/schematic.png?raw=true "Schematic")
 
 I used KiCAD 4.0.7 for this PCB, but it should open fine in different versions,
 as I keep `-cache.lib` file in this repo.
