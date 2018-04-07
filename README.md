@@ -4,15 +4,15 @@ This project contains solar tracker PCB I made for my dad's project.
 
 3D Model, Front View:
 
-![Image](doc/screenshots/3d-model-front.png?raw=true "3D Model, Front View")
+![Image](doc/screenshots/revb/3d-model-front.png?raw=true "3D Model, Front View")
 
 3D Model, Bottom View:
 
-![Image](doc/screenshots/3d-model-bottom.png?raw=true "3D Mode, Bottom View")
+![Image](doc/screenshots/revb/3d-model-bottom.png?raw=true "3D Mode, Bottom View")
 
 Schematic:
 
-![Image](doc/screenshots/schematic.png?raw=true "Schematic")
+![Image](doc/screenshots/revb/schematic.png?raw=true "Schematic")
 
 I used KiCAD 4.0.7 for this PCB, but it should open fine in different versions,
 as I keep `-cache.lib` file in this repo.
@@ -50,7 +50,7 @@ limit switches can be carbonized due to arcing).
 C1 provides some of the energy required by the motor during the initial spike of
 each turn-on.
 
-R3, R4 and C2 are used to properly terminate unused OPAMPs (U1C, U1D).
+R3 and R4 are used to properly terminate unused OPAMPs (U1C, U1D).
 
 J5 and J6 terminal blocks (along with D5, D6 diodes) are used for connecting the
 limit switches.
