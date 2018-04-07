@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Solar tracker"
-Date "2017-12-02"
-Rev "B"
+Date "2018-04-07"
+Rev "C"
 Comp "Dark Engineering Initiative"
 Comment1 "Author: Sam Protsenko <joe.skb7@gmail.com>"
 Comment2 ""
@@ -313,17 +313,6 @@ F 3 "" H 6900 2300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CP C2
-U 1 1 5A19AAD7
-P 7500 1800
-F 0 "C2" H 7525 1900 50  0000 L CNN
-F 1 "22uF" H 7525 1700 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 7538 1650 50  0001 C CNN
-F 3 "" H 7500 1800 50  0001 C CNN
-	1    7500 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR05
 U 1 1 5A19D40A
 P 4850 1300
@@ -444,7 +433,6 @@ Wire Wire Line
 	8950 2800 8850 2800
 Wire Wire Line
 	7800 1950 7800 2050
-Connection ~ 7800 2000
 Wire Wire Line
 	7800 1550 7800 1650
 Connection ~ 7800 1600
@@ -452,8 +440,6 @@ Wire Wire Line
 	8250 2700 8000 2700
 Wire Wire Line
 	8000 2700 8000 1600
-Wire Wire Line
-	7500 1600 8250 1600
 Connection ~ 8000 1600
 Wire Wire Line
 	4150 1700 4150 1600
@@ -556,12 +542,6 @@ Wire Wire Line
 Connection ~ 1500 3900
 Connection ~ 1100 3200
 Connection ~ 1900 3200
-Wire Wire Line
-	7500 2000 7800 2000
-Wire Wire Line
-	7500 1600 7500 1650
-Wire Wire Line
-	7500 2000 7500 1950
 Wire Wire Line
 	1500 3900 1500 3800
 Wire Wire Line
@@ -822,4 +802,6 @@ F 3 "" H 10600 3000 50  0001 C CNN
 	1    10600 3000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7800 1600 8250 1600
 $EndSCHEMATC
