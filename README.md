@@ -50,6 +50,10 @@ limit switches can be carbonized due to arcing).
 C1 provides some of the energy required by the motor during the initial spike of
 each turn-on.
 
+**TODO**: Add C2 (10u x 50V) close to C1
+
+**TODO**: Add 100n capacitor close to U1 chip (required by datasheet)
+
 R3 and R4 are used to properly terminate unused OPAMPs (U1C, U1D).
 
 J5 and J6 terminal blocks (along with D5, D6 diodes) are used for connecting the
