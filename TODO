@@ -1,0 +1,3 @@
+- add filtering 100n ceramic capacitor next to OPAMP (required by datasheet)
+- add 100uF/50V capacitor in H-bridge (for motor to withdraw/recuperate energy)
+- protection? (fuse, reverse protection)
